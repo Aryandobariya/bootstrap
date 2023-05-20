@@ -1,0 +1,443 @@
+/* =========== coman css =========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+/* =========== header =============== */
+header .navbar-nav {
+    flex: 1;
+    display: flex;
+    justify-content: end;
+}
+
+header .navbar-nav a {
+    color: white !important;
+    font-weight: 500;
+}
+
+header .navbar-nav .dropdown-menu a {
+    color: black !important;
+    transition: 0.3s ease all;
+}
+
+header .navbar-nav .dropdown-menu a:hover {
+    background-color: rgb(60, 87, 60);
+    color: whitesmoke !important;
+}
+
+.btn-animate {
+    border: 1px solid #4f4dc4;
+    height: 50px;
+    width: 150px;
+    background-color: transparent;
+    display: grid;
+    place-content: center;
+    position: relative;
+    z-index: 1;
+}
+
+.btn-animate a {
+    color: #4f4dc4;
+    transition: 1s all ease;
+}
+
+.btn-animate::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #4f4dc4;
+    height: 100%;
+    width: 100%;
+    transform: scale(0);
+    transition: 1s all ease-in-out;
+    transform-origin: 100% 100%;
+    z-index: -1;
+}
+
+.btn-animate:hover::after {
+    transform: scale(1);
+}
+
+.btn-animate:hover a {
+    color: white;
+}
+
+/*  ==================== home page ====================== */
+.small-head {
+    background-color: #4f4dc4;
+    color: white;
+    height: auto;
+    width: fit-content;
+}
+
+.home-page .home-left-content h1 {
+    font-size: 60px;
+
+}
+
+.home-page .slider1 {
+    background: url(slide1.jpg) no-repeat center;
+    background-size: cover;
+    height: 600px;
+    position: relative;
+    z-index: 1;
+}
+
+.home-page .slider1::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.523);
+    z-index: -1;
+}
+
+.home-page .slider2 {
+    background: url(slide2.jpg) no-repeat center;
+    background-size: cover;
+    height: 600px;
+    position: relative;
+    z-index: 1;
+}
+
+.home-page .slider2::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.523);
+    z-index: -1;
+}
+
+.home-page .slider3 {
+    background: url(slide3.jpg) no-repeat center;
+    background-size: cover;
+    height: 600px;
+    position: relative;
+    z-index: 1;
+}
+
+.home-page .slider3::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.523);
+    z-index: -1;
+}
+
+.home-page .slider4 {
+    background: url(slide4.jpg) no-repeat center;
+    background-size: cover;
+    height: 600px;
+    position: relative;
+    z-index: 1;
+}
+
+.home-page .slider4::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.523);
+    z-index: -1;
+}
+
+.home-page .bx-wrapper {
+    border: 0;
+    box-shadow: none;
+}
+
+/* =========== bet-dsignsc ================ */
+
+/* apply this to the container you want to animate */
+
+.bet-dsignsc,
+.compny-logo {
+    background: linear-gradient(-45deg, #ffeb3b, #74efff, #9c27b0);
+    background-size: 400% 400%;
+    animation: gradient-bg 20s ease infinite;
+}
+
+@keyframes gradient-bg {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+
+.bet-dsignsc .bet-dsign {
+    display: flex;
+    align-items: center;
+}
+
+/*   --------------- Interiors-desgin -------------- */
+.Interiors-desgin {
+    background-color: rgba(77, 116, 103, 0.377);
+}
+
+.Interiors-desgin .icon {
+    font-size: 30px;
+    color: brown;
+}
+
+.Interiors-desgin .desing-detaile h4 a {
+    color: black;
+    font-weight: 700;
+}
+
+.Interiors-desgin .desing-detaile h4 a:hover {
+    color: green;
+}
+
+.perfect {
+    display: flex;
+    align-items: center;
+}
+
+.perfect .leftval {
+    padding-left: 150px;
+    padding-right: 50px;
+}
+
+.perfect span {
+    font-size: 30px;
+    color: brown;
+    padding-bottom: 10px;
+}
+
+.perfect h5 a {
+    font-weight: 700;
+    color: black;
+}
+
+.perfect h5 a:hover {
+    color: green;
+}
+
+/* -------------------- home interiors ------------------ */
+.home-interiors .design-inform {
+
+    height: auto;
+    /* width: 350px; */
+    position: relative;
+    margin: 10px;
+}
+
+.home-interiors .design-inform .overly {
+    height: 0%;
+    width: 78%;
+    position: absolute;
+    /* top: 40px; */
+    bottom: 40px;
+    right: 0;
+    left: 37px;
+    background-color: rgba(0, 0, 0, 0.501);
+    overflow: hidden;
+    transition: 1s ease all;
+    color: white;
+
+}
+
+.home-interiors .design-inform:hover .overly {
+    height: 85%;
+}
+
+.home-interiors .design-inform:hover .overly h3 {
+    font-size: 20px;
+}
+
+.home-interiors .design-inform .overly-content {
+    position: absolute;
+    bottom: -100px;
+    left: 60px;
+    transition: 1 ease all;
+    text-align: center;
+    /* width: 100%; */
+
+}
+
+.home-interiors .design-inform:hover .overly-content {
+    bottom: 170px;
+    left: 60px;
+}
+
+/* ============ design-idea ============ */
+.design-idea {
+    background-image: url(./2\ \(1\).jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    position: relative;
+    z-index: 1;
+}
+
+.design-idea::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.481);
+    z-index: -1;
+}
+
+.f-design {
+    background-color: white;
+}
+
+/* ================== compny-logo ================ */
+.compny-logo .comp-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    justify-items: center;
+
+}
+
+
+.usercontect input[type="text"] {
+    border: 2px solid black;
+    border-radius: 0;
+
+}
+
+.usercontect input[type="text"]:focus {
+    box-shadow: none;
+
+}
+
+.usercontect button {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    border: transparent;
+    color: white;
+    transition: 0.5s ease all;
+}
+
+.usercontect button:hover {
+    background-color: green;
+}
+
+.usercontect .user-contect {
+    padding-left: 50px
+}
+
+
+footer {
+    background-color: black;
+}
+
+footer li {
+    line-height: 40px;
+}
+
+footer li a {
+    color: rgb(134, 130, 130);
+}
+
+footer li a:hover {
+    color: white;
+}
+
+footer .divider {
+    height: 1px;
+    width: 100%;
+    background-color: white;
+}
+
+footer .icon {
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+}
+
+footer .facebook,
+.twiiter,
+.insta,
+.gplus,
+.pintrest {
+    height: 35px;
+    width: 35px;
+    background-color: white;
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+}
+
+footer .icon .facebook:hover {
+    background-color: #2b4170;
+    background: -moz-linear-gradient(top, #3b5998, #2b4170);
+    background: -ms-linear-gradient(top, #3b5998, #2b4170);
+    background: -webkit-linear-gradient(top, #3b5998, #2b4170);
+    color: white;
+}
+
+footer .icon .twiiter:hover {
+    background-color: #1D9BF0;
+    color: white;
+}
+
+footer .icon .insta:hover {
+    color: white;
+    background: #f09433;
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
+}
+footer .icon .gplus:hover{
+    color: white;
+    background-color: #d34836;
+}
+
+footer .icon .pintrest:hover{
+    background-color: #E60023;
+    color: white;
+}
+
+
